@@ -338,6 +338,18 @@ public class SplashActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(@NonNull ShopResponse response) {
                         Timber.d("Get shops response: %s", response.toString());
+                        Shop s= new Shop();
+                        s.setLanguage("ar");
+                        s.setName("عربى");
+                        s.setFlagIcon("https://s23.postimg.org/uwzjqukl7/egypt_flag_48.png");
+                        s.setDescription("");
+                        s.setUrl("");
+                        s.setLogo("");
+                        s.setCurrency("KW");
+                        s.setId(50);
+                        s.setGoogleUa("UA-73690730-2");
+                        List<Shop> obj3=response.getShopList();
+                        obj3.add(2,s);
                         setSpinShops(response.getShopList());
                         if (progressDialog != null) progressDialog.cancel();
                         animateContentVisible();

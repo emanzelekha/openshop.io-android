@@ -236,6 +236,7 @@ public class Analytics {
         if (actualNonNullShop != null && newShopSelected != null) {
             String description = "From (id=" + actualNonNullShop.getId() + ",name=" + actualNonNullShop.getName() +
                     ") to (id=" + newShopSelected.getId() + ",name=" + newShopSelected.getId() + ")";
+            System.out.println(description+"yyyyy");
             // FB facebookLogger
             Bundle parameters = new Bundle();
             parameters.putString(AppEventsConstants.EVENT_PARAM_DESCRIPTION, description);

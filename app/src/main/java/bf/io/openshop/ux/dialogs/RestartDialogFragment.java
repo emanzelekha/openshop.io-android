@@ -2,6 +2,7 @@ package bf.io.openshop.ux.dialogs;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -18,6 +19,8 @@ import bf.io.openshop.utils.Analytics;
 import bf.io.openshop.ux.RestartAppActivity;
 import timber.log.Timber;
 
+import static android.util.LayoutDirection.RTL;
+
 public class RestartDialogFragment extends DialogFragment {
 
     private Shop newShopSelected;
@@ -31,6 +34,7 @@ public class RestartDialogFragment extends DialogFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       // RTL(SettingsMy.getActualNonNullShop(getActivity()).getLanguage());
         setStyle(DialogFragment.STYLE_NO_TITLE, android.R.style.Theme_Holo_Light_Dialog_NoActionBar_MinWidth);
     }
 

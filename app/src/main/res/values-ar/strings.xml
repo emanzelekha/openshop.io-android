@@ -1,0 +1,197 @@
+<resources>
+
+
+    <!-- General strings-->
+    <string name="No_network_connection">لا يوجد اتصال بالانترنت</string>
+    <string name="Internal_error">خطا داخلى , من فظلك حاول فيما بعد</string>
+    <string name="Loading">جارى التحميل ...</string>
+    <string name="Retry">حاول مرة اخرى</string>
+    <string name="Ok">نعم</string>
+    <string name="Cancel">رفض</string>
+    <string name="Close">اغلاق</string>
+    <string name="Clear">مسح</string>
+    <string name="Undo">رجوع</string>
+    <string name="Required_field">الطلب فشل</string>
+    <string name="The_entries_must_match">The entries must match</string>
+    <string name="Content_is_empty">المحتوى فارغ .</string>
+
+    <!-- Strings related to splash screen -->
+    <string name="Select_shop">اختر المتجر</string>
+    <string name="Select_the_country_where_you_want_to_shop">اختر المدينة \n اين تحب ان تتسوق </string>
+    <string name="Continue">تخطى</string>
+
+    <!-- Main activity related -->
+    <string name="Another_click_for_leaving_app">ضغطة اخرى و تغلق البرنامج</string>
+    <string name="All_categories">جميع المميزات</string>
+    <string name="menu_action_search">بحث</string>
+    <string name="Type_your_wish">النوع الذى تتمناة</string>
+    <string name="menu_action_cart">قطع التسوق</string>
+    <string name="menu_action_wishlist">Wishlist</string>
+
+
+    <!-- Products related strings -->
+    <string name="Just_arrived">اول دخول</string>
+    <string name="No_banners">لا يوجد صور</string>
+    <string name="Show_offers">اظهر العروض</string>
+    <string name="FILTER">تحديت</string>
+    <string name="Apply">طلب</string>
+    <string name="Restart">اعادة تشغيل</string>
+    <string name="Filter_unavailable">لا يوجد ما تبحث عنة</string>
+    <string name="Products_not_found">المنتجات غير موجودة</string>
+    <string name="Product_not_found">المنتج غير موجود</string>
+    <string name="ADD_TO_CART">اضف الى منتجاتك</string>
+    <string name="SEND_TO_A_FRIEND">ارسل الى صديق</string>
+    <string name="RECOMMENDED">مطلوب</string>
+    <string name="Select_size">اختر الحجم</string>
+    <string name="Product">المنتج</string>
+    <string name="All">الكل</string>
+
+    <!-- Products sort options -->
+    <string name="Recommended">مطلوب</string>
+    <string name="Whats_new">الجديد</string>
+    <string name="Highest_price">اعلى سعر</string>
+    <string name="Lowest_price">اقل سعر</string>
+
+
+    <!-- User related strings -->
+    <string name="Unknown_user">مستخدم غير معروف</string>
+    <string name="Profile">حسابك</string>
+    <string name="Name_colon">:الاسم</string>
+    <string name="Address_colon">العنوان:</string>
+    <string name="Email_colon">الايميل:</string>
+    <string name="Phone_colon">رقم الهاتف:</string>
+
+    <string name="Account">الحساب</string>
+    <string name="Email">الايميل</string>
+    <string name="Phone">رقم الهاتف</string>
+    <string name="Street">الشارع</string>
+    <string name="House_code">رقم المنزل</string>
+    <string name="City">المدينة</string>
+    <string name="ZIP">ZIP</string>
+
+    <string name="Changing_the_password">تغير كلمة المرور</string>
+    <string name="Password">كلمة المرور</string>
+    <string name="New_password">كلمة المرور الجديدة</string>
+    <string name="Password_again">كلمة المرور مرة اخرى</string>
+    <string name="Change_password">تغير كلمة المرور</string>
+    <string name="Save">حفظ</string>
+
+    <string name="My_orders">طلبات</string>
+    <string name="Branches">الفروع</string>
+    <string name="Settings">الاعدادات</string>
+
+
+    <!-- Login related strings-->
+    <string name="Log_in">تسجيل الدخول</string>
+    <string name="Log_out">تسجيل الخروج</string>
+    <string name="Log_in_to_shop_via">تجيل دخول للمتجر</string>
+    <string name="Log_in_to_shop_via_email">تسجيل دخول عن طريق الايميل</string>
+    <string name="Dont_have_an_account">لا تملك حساب ؟</string>
+    <string name="Skip">تخطى</string>
+    <string name="Forgot_your_password">نسيت كلمة المرور</string>
+    <string name="Email_for_recovery">ايميل من اجل الرجوع</string>
+    <string name="Reset">اعد تشغيل</string>
+    <string name="Log_me_in">ادخلنى</string>
+    <string name="E_MAIL">ايميل</string>
+    <string name="FACEBOOK">فيسبوك</string>
+    <string name="Register">عمل حساب</string>
+    <string name="Male">ذكر</string>
+    <string name="Female">انثى</string>
+    <string name="Check_your_email_we_sent_you_an_confirmation_email">تفقد ايميلك ,لقد ارسلنا لك تاكيد</string>
+    <string name="Facebook_login_failed">التسجيل بالفيسبوك فشل</string>
+    <string name="Receiving_facebook_profile_failed">الاتصال بحسابك بالفيسبوك فشل</string>
+    <string name="Oops_login_expired">تسجل دخولك انتهى</string>
+    <string name="Your_session_has_expired_Please_log_in_again">مدة دخولك انتهت حاول الدخول مرة اخرى</string>
+
+
+    <!-- Cart and order related strings -->
+    <string name="Shopping_cart">مشترياتك</string>
+    <string name="Your_cart_is_empty">مشترياتك فارغة</string>
+    <string name="START_SHOPPING">ابدا التسوق</string>
+    <string name="SHIPPING_AND_PAYMENT">تسوق وادفع</string>
+    <string name="Please_select_a_size">من فضلك اختر الحجم</string>
+    <string name="added_to_cart">اضف الى مشترياتك</string>
+    <string name="Go_to_cart">اذهب الى مشترياتك</string>
+    <string name="Delete">مسح</string>
+    <string name="Edit">تعديل</string>
+    <string name="Update_item">تعديل:</string>
+    <string name="The_item_has_been_successfully_removed">تم المسح بنجاح</string>
+    <string name="Discount_code">Discount code</string>
+    <string name="Do_you_have_a_discount_code">Do you have a discount code?</string>
+    <string name="Enter_the_discount_code">Enter the discount code</string>
+    <string name="Internal_error_reload_cart_please">Internal error. Reload cart please.</string>
+
+    <!-- Order related strings-->
+    <string name="Order">Order</string>
+    <string name="Order_colon">Order:</string>
+    <string name="Date_created">Date created</string>
+    <string name="Date_created_colon">Date created:</string>
+    <string name="Total_price">Total price</string>
+    <string name="Order_summary">Order summary</string>
+    <string name="Order_history">Order history</string>
+    <string name="Your_orders_history_is_empty">Your order history is empty</string>
+    <string name="Order_details">Order details</string>
+    <string name="Shipping">Shipping</string>
+    <string name="Payment">Payment</string>
+    <string name="Shipping_method">Shipping method</string>
+    <string name="Choose_shipping_method">Choose shipping method</string>
+    <string name="Choose_payment_method">Choose payment method</string>
+    <string name="Shipping_details">Shipping details</string>
+    <string name="Note">Note</string>
+    <string name="Click_on_Order_to_allow_our_Terms_and_Conditions">Click on Order to allow our <![CDATA[<b><font color=#ee1f65>Terms and Conditions</b>]]></string>
+    <string name="Finish_order">Finish order</string>
+    <string name="Shipping_is_empty">Shipping is empty</string>
+    <string name="Personal_pickup">Personal pickup</string>
+    <string name="Shipping_type_colon">Shipping type:</string>
+    <string name="Shipping_price_colon">Shipping price:</string>
+    <string name="free">free</string>
+    <string name="Summary">Summary</string>
+    <string name="Total_colon">Total:</string>
+
+
+    <!-- Wishlist related -->
+    <string name="Your_wishlist_is_empty">Your wishlist is empty.</string>
+    <string name="Wishlist">Wishlist</string>
+    <string name="Product_deleted_from_wishlist">Product deleted from wishlist</string>
+    <string name="Product_added_to_wishlist">Product added to wishlist</string>
+    <string name="Go_to_wishlist">Go to wishlist</string>
+
+
+    <!-- Others -->
+    <string name="Select">Select</string>
+    <string name="Open_source_libraries">Open source libraries</string>
+    <string name="License_details_for_open_source_software">License details for open source software</string>
+    <string name="App_needs_to_be_restarted">To change the shop an app restart is needed.</string>
+    <string name="including_VAT">inc. VAT</string>
+    <string name="Thank_you_for_your_order">Thank you for your order</string>
+    <string name="Wait_for_sms_or_email_order_confirmation">انتظر من اجل &lt;b>SMS&lt;/b> or &lt;b>email&lt;/b> order confirmation.</string>
+    <string name="This_is_a_sample_app">هذا تطبيق بسيط</string>
+    <string name="Sample_app_description">شكرا لك على وقتك. لمعرفة المزيد عن هذا المشروع، يرجى زيارة موقعنا هنا:<a href="http://openshop.io/">Openshop.io</a>.</string>
+    <string name="Link_is_invalid">رابط غير صالح</string>
+    <string name="Min">اقل</string>
+    <string name="Max">أقصى</string>
+
+
+    <!-- Format strings -->
+    <string name="format_space_prefix"> %1$s</string>
+    <string name="format_comma_prefix">, %1$s</string>
+    <string name="format_string_division">%1$s / %2$s</string>
+    <string name="format_quantity">%1$d pcs</string>
+    <string name="format_string_quantity">%1$s %2$dx</string>
+    <string name="format_plus">+ %1$s</string>
+    <string name="format_number">%1$d</string>
+    <string name="format_price_range">%1$d %2$s - %3$d %4$s</string>
+    <string name="format_price_discount_percents">-%1$d %%</string>
+
+    <!-- Content description strings -->
+    <string name="content_description_open_navigation_drawer">فتح القائمة </string>
+    <string name="content_description_close_navigation_drawer">اغلاق القائمة </string>
+    <string name="content_description_submenu">نشر القائمة الفرعية</string>
+    <string name="content_description_move_right">تحرك يمينا</string>
+    <string name="content_description_move_left">تحرك يسارا</string>
+    <string name="content_description_background">خلفية</string>
+    <string name="content_description_back_arrow">السهم الخلفي</string>
+    <string name="content_description_intro_screen">شاشة مقدمة</string>
+    <string name="content_description_product_image">صورة المنتج</string>
+    <string name="content_description_shipping_info">معلومات الشحن</string>
+</resources>

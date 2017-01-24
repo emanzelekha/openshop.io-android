@@ -18,6 +18,9 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
 import bf.io.openshop.CONST;
 import bf.io.openshop.MyApplication;
 import bf.io.openshop.R;
@@ -152,9 +155,17 @@ public class BannersFragment extends Fragment {
      */
     private void loadBanners(String url) {
         progressDialog.show();
+        NumberFormat nf = NumberFormat.getInstance(new Locale("EG", "ar"));//formate
         if (url == null) {
             bannersRecyclerAdapter.clear();
-            url = String.format(EndPoints.BANNERS, SettingsMy.getActualNonNullShop(getActivity()).getId());
+            if(SettingsMy.getActualNonNullShop(getActivity()).getId()==50){
+                url = String.format(EndPoints.BANNERS, 21);
+            }else{
+                System.out.println(SettingsMy.getActualNonNullShop(getActivity()).getId()+"fhhefgvh");
+          //  url = String.format(EndPoints.BANNERS, SettingsMy.getActualNonNullShop(getActivity()).getId());
+              url=  "http://77.93.198.186/v1.2/"+ SettingsMy.getActualNonNullShop(getActivity()).getId()+"/banners";
+
+            }
         }
         GsonRequest<BannersResponse> getBannersRequest = new GsonRequest<>(Request.Method.GET, url, null, BannersResponse.class,
                 new Response.Listener<BannersResponse>() {

@@ -35,16 +35,14 @@
      with the content view. -->
     <!-- Drawer width no more than 320dp-->
 
-    <fragment
 
+    <fragment
         android:id="@+id/main_navigation_drawer_fragment"
         android:name="bf.io.openshop.ux.fragments.DrawerFragment"
         android:layout_width="@dimen/navigation_drawer_size"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:layout="@layout/fragment_drawer"
-        tools:layout="@layout/fragment_drawer"/>
-
-
+        android:layout_gravity="end"
+        app:layout="@layout/fragment_drawer_ar"
+        tools:layout="@layout/fragment_drawer_ar"/>
 
 </android.support.v4.widget.DrawerLayout>

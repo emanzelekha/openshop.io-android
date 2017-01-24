@@ -282,8 +282,14 @@ public class DrawerFragment extends Fragment {
         drawerLoading = true;
         drawerProgress.setVisibility(View.VISIBLE);
         drawerRetryBtn.setVisibility(View.GONE);
-
-        String url = String.format(EndPoints.NAVIGATION_DRAWER, SettingsMy.getActualNonNullShop(getActivity()).getId());
+        String url = "";
+        System.out.println(SettingsMy.getActualNonNullShop(getActivity()).getId() );
+        if (SettingsMy.getActualNonNullShop(getActivity()).getId() == 50) {
+            url = String.format(EndPoints.NAVIGATION_DRAWER, 21);
+        } else {
+            System.out.println(SettingsMy.getActualNonNullShop(getActivity()).getId()+"fhhefgvh");
+            url=  "http://77.93.198.186/v1.2/"+ SettingsMy.getActualNonNullShop(getActivity()).getId()+"/navigation_drawer";
+        }
         GsonRequest<DrawerResponse> getDrawerMenu = new GsonRequest<>(Request.Method.GET, url, null, DrawerResponse.class, new Response.Listener<DrawerResponse>() {
             @Override
             public void onResponse(@NonNull DrawerResponse drawerResponse) {

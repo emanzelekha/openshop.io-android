@@ -24,7 +24,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:supportsRtl="false"
         android:theme="@style/MaterialTheme">
 
         <meta-data
@@ -32,6 +31,7 @@
             android:value="@string/facebook_app_id"/>
 
         <activity
+            android:configChanges="locale|layoutDirection"
             android:name=".ux.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -46,6 +46,7 @@
         </activity>
 
         <activity
+            android:configChanges="locale|layoutDirection"
             android:name=".ux.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize">
@@ -59,13 +60,14 @@
         </activity>
 
         <activity
+          android:configChanges="locale|layoutDirection"
             android:name="bf.io.openshop.ux.RestartAppActivity"
             android:screenOrientation="portrait"/>
 
         <!-- Facebook activity used for FB login-->
         <activity
             android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation|locale"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
 

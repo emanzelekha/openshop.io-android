@@ -22,6 +22,17 @@
          "language":"cs",
          "currency":"K\u010d",
          "flag_icon":"http:\/\/77.93.198.186\/images\/flags\/48\/cz.png"
-      }
+      },
+      {
+                 "id":50,
+                 "name":"عربى",
+                 "description":"",
+                 "url":"",
+                 "logo":"",
+                 "google_ua":"UA-73690730-2",
+                 "language":"ar",
+                 "currency":"kw",
+                 "flag_icon":"https:\/\/s23.postimg.org\/uwzjqukl7\/egypt_flag_48.png"
+              }
    ]
 }

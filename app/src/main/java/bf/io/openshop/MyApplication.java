@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -60,6 +61,9 @@ public class MyApplication extends Application {
         conf.locale = new Locale(lang);
         Timber.d("Setting language: %s", lang);
         res.updateConfiguration(conf, dm);
+
+
+
     }
 
     /**

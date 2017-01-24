@@ -15,6 +15,10 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.List;
 
 import bf.io.openshop.CONST;
@@ -80,6 +84,18 @@ public class SettingsFragment extends Fragment {
                     @Override
                     public void onResponse(@NonNull ShopResponse response) {
                         Timber.d("Available shops response: %s", response.toString());
+                        Shop s= new Shop();
+                        s.setLanguage("ar");
+                        s.setName("عربى");
+                        s.setFlagIcon("https://s23.postimg.org/uwzjqukl7/egypt_flag_48.png");
+                        s.setDescription("");
+                        s.setUrl("");
+                        s.setLogo("");
+                        s.setCurrency("KW");
+                        s.setId(50);
+                        s.setGoogleUa("UA-73690730-2");
+                      List<Shop> obj3=response.getShopList();
+                        obj3.add(2,s);
                         setSpinShops(response.getShopList());
                         if (progressDialog != null) progressDialog.cancel();
                     }
@@ -116,7 +132,9 @@ public class SettingsFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Shop selectedShop = (Shop) parent.getItemAtPosition(position);
+
                 if (selectedShop != null && selectedShop.getId() != SettingsMy.getActualNonNullShop(getActivity()).getId()) {
+
                     RestartDialogFragment rdf = RestartDialogFragment.newInstance(selectedShop);
                     rdf.show(getFragmentManager(), RestartDialogFragment.class.getSimpleName());
                 } else {

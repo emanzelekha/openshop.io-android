@@ -40,9 +40,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.transition.TransitionInflater;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -186,8 +188,13 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Fr
         // Set app specific language localization by selected shop.
         String lang = SettingsMy.getActualNonNullShop(this).getLanguage();
         MyApplication.setAppLocale(lang);
+        System.out.println(lang+"fdgff");
+        if (lang.equals("ar")) {
+            setContentView(R.layout.activity_main_ar);
+        } else {
+            setContentView(R.layout.activity_main);
+        }
 
-        setContentView(R.layout.activity_main);
 
 //        if (BuildConfig.DEBUG) {
 //            // Only debug properties, used for checking image memory management.
@@ -207,6 +214,9 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Fr
         } else {
             Timber.e(new RuntimeException(), "GetSupportActionBar returned null.");
         }
+
+
+
         drawerFragment = (DrawerFragment) getSupportFragmentManager().findFragmentById(R.id.main_navigation_drawer_fragment);
         drawerFragment.setUp((DrawerLayout) findViewById(R.id.main_drawer_layout), toolbar, this);
 
